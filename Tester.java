@@ -59,8 +59,18 @@ public class Tester{
     RationalNumber twnty5 = new RationalNumber(-50, -1);
 
     System.out.println("\ngetValue test");
-    System.out.println(A1);
-    System.out.println(zero);
-    System.out.println(twnty5);
+    System.out.println(A1); //25
+    System.out.println(zero); //0
+    System.out.println(twnty5); //50
+
+    System.out.println("\ngetNumerator test");
+    System.out.println(A1.getNumerator()); //50
+    System.out.println(zero.getNumerator()); //0
+    System.out.println(twnty5.getNumerator()); //50
+
+    System.out.println("\ngetDenominator test");
+    System.out.println(A1.getDenominator());
+    System.out.println(zero.getDenominator());
+    System.out.println(twnty5.getDenominator());
   }
 }
