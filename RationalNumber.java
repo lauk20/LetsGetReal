@@ -39,4 +39,8 @@ public class RationalNumber extends RealNumber{
 
     return numeSame && denomSame;
   }
+
+  public String toString(){
+    return getNumerator() + "/" + getDenominator();
+  }
 }
