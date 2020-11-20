@@ -69,8 +69,15 @@ public class Tester{
     System.out.println(twnty5.getNumerator()); //50
 
     System.out.println("\ngetDenominator test");
-    System.out.println(A1.getDenominator());
-    System.out.println(zero.getDenominator());
-    System.out.println(twnty5.getDenominator());
+    System.out.println(A1.getDenominator()); //2
+    System.out.println(zero.getDenominator()); //1
+    System.out.println(twnty5.getDenominator()); //1
+
+    System.out.println("\nreciprocal test");
+    RationalNumber B1 = new RationalNumber(2, 50);
+    System.out.println(A1.reciprocal()); //0.04
+    System.out.println(zero.reciprocal()); //0
+    System.out.println(twnty5.reciprocal()); //0.02
+    System.out.println(B1.reciprocal()); //25
   }
 }

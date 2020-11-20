@@ -16,7 +16,7 @@ public class RationalNumber extends RealNumber{
   }
 
   public double getValue(){
-    return (numerator/denominator);
+    return ((double)numerator/(double)denominator);
   }
 
   public int getNumerator(){
@@ -25,5 +25,11 @@ public class RationalNumber extends RealNumber{
 
   public int getDenominator(){
     return denominator;
+  }
+
+  public RationalNumber reciprocal(){
+    RationalNumber result = new RationalNumber(getDenominator(), getNumerator());
+
+    return result;
   }
 }
