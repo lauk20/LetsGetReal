@@ -128,5 +128,12 @@ public class Tester{
     System.out.println(R6.add(R7)); //35/52
     System.out.println(R4.add(R3)); //18/1
     System.out.println(R5.add(R7)); //1609/39
+
+    System.out.println("\nsubtract test");
+    System.out.println(R1.subtract(R3)); //-9/1
+    System.out.println(R2.subtract(R7)); //172/39
+    System.out.println(R6.subtract(R7)); //25/156
+    System.out.println(R4.subtract(R3)); //-2
+    System.out.println(R5.subtract(R7)); //1589/39
   }
 }

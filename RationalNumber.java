@@ -99,4 +99,13 @@ public class RationalNumber extends RealNumber{
 
     return result;
   }
+
+  public RationalNumber subtract(RationalNumber other){
+    int top = (getNumerator() * other.getDenominator()) - (other.getNumerator() * getDenominator());
+    int bot = getDenominator() * other.getDenominator();
+
+    RationalNumber result = new RationalNumber(top, bot);
+
+    return result;
+  }
 }
