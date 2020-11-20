@@ -8,4 +8,27 @@ public class RealNumber{
   public double getValue(){
     return value;
   }
+
+  public String toString(){
+    return "" + getValue();
+  }
+
+  public boolean equals(RealNumber other){
+    if (getValue() == 0){
+      if (other.getValue() == 0){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+
+    double error = (Math.abs(getValue() - other.getValue())/other.getValue()) * 100;
+
+    if (error <= 0.001){
+      return true;
+    }
+
+    return false;
+  }
 }
