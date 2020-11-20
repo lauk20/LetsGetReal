@@ -52,5 +52,15 @@ public class Tester{
     System.out.println(D.subtract(A)); //50
     System.out.println(A.subtract(D)); //-50
     System.out.println(A.subtract(A)); //0
+
+    System.out.println("\nSTART OF RATIONAL NUMBERS");
+    RationalNumber A1 = new RationalNumber(50, 2);
+    RationalNumber zero = new RationalNumber(101010010, 0);
+    RationalNumber twnty5 = new RationalNumber(-50, -1);
+
+    System.out.println("\ngetValue test");
+    System.out.println(A1);
+    System.out.println(zero);
+    System.out.println(twnty5);
   }
 }
