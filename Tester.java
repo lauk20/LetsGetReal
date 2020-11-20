@@ -90,5 +90,22 @@ public class Tester{
     System.out.println(C3.equals(C1)); //false
     System.out.println(C3.equals(zero)); //false
     System.out.println(C3.equals(C1)); //false
+
+    System.out.println("\nreduce test");
+    RationalNumber R1 = new RationalNumber(5, 5);
+    RationalNumber R2 = new RationalNumber(210, 45);
+    RationalNumber R3 = new RationalNumber(1000, 100);
+    RationalNumber R4 = new RationalNumber(56, 7);
+    RationalNumber R5 = new RationalNumber(369, 9);
+    RationalNumber R6 = new RationalNumber(10, 24);
+    RationalNumber R7 = new RationalNumber(10, 39);
+
+    System.out.println(R1);
+    System.out.println(R2);
+    System.out.println(R3);
+    System.out.println(R4);
+    System.out.println(R5);
+    System.out.println(R6);
+    System.out.println(R7);
   }
 }
