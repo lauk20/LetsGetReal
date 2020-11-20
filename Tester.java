@@ -79,5 +79,16 @@ public class Tester{
     System.out.println(zero.reciprocal()); //0
     System.out.println(twnty5.reciprocal()); //0.02
     System.out.println(B1.reciprocal()); //25
+
+    System.out.println("\nequals test");
+    RationalNumber C1 = new RationalNumber(0, 0);
+    RationalNumber C2 = new RationalNumber(1010101, 0);
+    RationalNumber C3 = new RationalNumber(50, 2);
+    System.out.println(C1.equals(C2)); //true
+    System.out.println(C3.equals(A1)); //true
+    System.out.println(zero.equals(C1)); //true
+    System.out.println(C3.equals(C1)); //false
+    System.out.println(C3.equals(zero)); //false
+    System.out.println(C3.equals(C1)); //false
   }
 }

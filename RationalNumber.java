@@ -32,4 +32,11 @@ public class RationalNumber extends RealNumber{
 
     return result;
   }
+
+  public boolean equals(RationalNumber other){
+    boolean numeSame = (getNumerator() == other.getNumerator());
+    boolean denomSame = (getDenominator() == other.getDenominator());
+
+    return numeSame && denomSame;
+  }
 }
