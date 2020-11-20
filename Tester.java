@@ -37,5 +37,12 @@ public class Tester{
     System.out.println(A.multiply(C)); //0
     System.out.println(D.multiply(C)); //50 * 25
     System.out.println(one.multiply(C)); //25
+
+    System.out.println("\ndivide test");
+    System.out.println(C.divide(one)); //25
+    System.out.println(one.divide(one)); //1
+    System.out.println(C.divide(C)); //1
+    System.out.println(D.divide(C)); //2
+    System.out.println(A.divide(C)); //0
   }
 }

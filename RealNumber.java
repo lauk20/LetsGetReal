@@ -43,4 +43,10 @@ public class RealNumber{
 
     return product;
   }
+
+  public RealNumber divide(RealNumber other){
+    RealNumber quotient = new RealNumber(getValue()/other.getValue());
+
+    return quotient;
+  }
 }
