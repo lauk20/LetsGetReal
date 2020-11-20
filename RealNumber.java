@@ -49,4 +49,10 @@ public class RealNumber{
 
     return quotient;
   }
+
+  public RealNumber subtract(RealNumber other){
+    RealNumber result = new RealNumber(getValue() - other.getValue());
+
+    return result;
+  }
 }

@@ -44,5 +44,13 @@ public class Tester{
     System.out.println(C.divide(C)); //1
     System.out.println(D.divide(C)); //2
     System.out.println(A.divide(C)); //0
+
+    System.out.println("\ndivide test");
+    System.out.println(D.subtract(C)); //25
+    System.out.println(C.subtract(D)); //-25
+    System.out.println(C.subtract(C)); //0
+    System.out.println(D.subtract(A)); //50
+    System.out.println(A.subtract(D)); //-50
+    System.out.println(A.subtract(A)); //0
   }
 }
