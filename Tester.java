@@ -107,5 +107,12 @@ public class Tester{
     System.out.println(R5);
     System.out.println(R6);
     System.out.println(R7);
+
+    System.out.println("\nmultiply test");
+    System.out.println(R1.multiply(R3)); //10/1
+    System.out.println(R2.multiply(R7)); //140/117
+    System.out.println(R6.multiply(R7)); //25/234
+    System.out.println(R4.multiply(R3)); //80/1
+    System.out.println(R5.multiply(R7)); //410/39
   }
 }

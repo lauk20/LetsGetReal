@@ -75,4 +75,13 @@ public class RationalNumber extends RealNumber{
     numerator = getNumerator() / gcd;
     denominator = getDenominator() / gcd;
   }
+
+  public RationalNumber multiply(RationalNumber other){
+    int top = getNumerator() * other.getNumerator();
+    int bot = getDenominator() * other.getDenominator();
+    
+    RationalNumber product = new RationalNumber(top, bot);
+
+    return product;
+  }
 }
