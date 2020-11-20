@@ -114,5 +114,19 @@ public class Tester{
     System.out.println(R6.multiply(R7)); //25/234
     System.out.println(R4.multiply(R3)); //80/1
     System.out.println(R5.multiply(R7)); //410/39
+
+    System.out.println("\ndivide test");
+    System.out.println(R1.divide(R3)); //1/10
+    System.out.println(R2.divide(R7)); //91/5
+    System.out.println(R6.divide(R7)); //13/8
+    System.out.println(R4.divide(R3)); //4/5
+    System.out.println(R5.divide(R7)); //1599/10
+
+    System.out.println("\nadd test");
+    System.out.println(R1.add(R3)); //11/1
+    System.out.println(R2.add(R7)); //64/13
+    System.out.println(R6.add(R7)); //35/52
+    System.out.println(R4.add(R3)); //18/1
+    System.out.println(R5.add(R7)); //1609/39
   }
 }

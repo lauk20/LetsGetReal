@@ -79,9 +79,24 @@ public class RationalNumber extends RealNumber{
   public RationalNumber multiply(RationalNumber other){
     int top = getNumerator() * other.getNumerator();
     int bot = getDenominator() * other.getDenominator();
-    
+
     RationalNumber product = new RationalNumber(top, bot);
 
     return product;
+  }
+
+  public RationalNumber divide(RationalNumber other){
+    RationalNumber recipOther = other.reciprocal();
+
+    return multiply(recipOther);
+  }
+
+  public RationalNumber add(RationalNumber other){
+    int top = (getNumerator() * other.getDenominator()) + (other.getNumerator() * getDenominator());
+    int bot = getDenominator() * other.getDenominator();
+
+    RationalNumber result = new RationalNumber(top, bot);
+
+    return result;
   }
 }
