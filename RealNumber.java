@@ -37,4 +37,10 @@ public class RealNumber{
 
     return sum;
   }
+
+  public RealNumber multiply(RealNumber other){
+    RealNumber product = new RealNumber(getValue() * other.getValue());
+
+    return product;
+  }
 }

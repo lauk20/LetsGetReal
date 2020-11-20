@@ -24,8 +24,18 @@ public class Tester{
     System.out.println("\nadd() test");
     RealNumber C = new RealNumber(25);
     RealNumber D = C.add(C);
+    RealNumber one = new RealNumber(1);
     System.out.println(D);
     System.out.println(A.add(C));
     System.out.println(B.add(C));
+
+    System.out.println("\nmultiply() test");
+    System.out.println(C.multiply(D)); //25 * 50
+    System.out.println(C.multiply(A)); //0
+    System.out.println(C.multiply(B)); //0
+    System.out.println(A.multiply(B)); //0
+    System.out.println(A.multiply(C)); //0
+    System.out.println(D.multiply(C)); //50 * 25
+    System.out.println(one.multiply(C)); //25
   }
 }
