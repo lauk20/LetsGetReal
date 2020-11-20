@@ -20,5 +20,12 @@ public class Tester{
 
     System.out.println(A.equals(B));
     System.out.println(B.equals(A));
+
+    System.out.println("\nadd() test");
+    RealNumber C = new RealNumber(25);
+    RealNumber D = C.add(C);
+    System.out.println(D);
+    System.out.println(A.add(C));
+    System.out.println(B.add(C));
   }
 }

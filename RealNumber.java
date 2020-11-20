@@ -31,4 +31,10 @@ public class RealNumber{
 
     return false;
   }
+
+  public RealNumber add(RealNumber other){
+    RealNumber sum = new RealNumber(getValue() + other.getValue());
+
+    return sum;
+  }
 }
