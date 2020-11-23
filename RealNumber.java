@@ -25,7 +25,7 @@ public class RealNumber{
 
     double error = (Math.abs(getValue() - other.getValue())/other.getValue()) * 100;
 
-    if (error <= 0.001){
+    if (Math.abs(error) <= 0.001){
       return true;
     }
 

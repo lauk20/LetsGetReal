@@ -42,7 +42,7 @@ public class RationalNumber extends RealNumber{
     boolean numeSame = (getNumerator() == other.getNumerator());
     boolean denomSame = (getDenominator() == other.getDenominator());
 
-    return numeSame && denomSame;
+    return (numeSame && denomSame) || (numeSame && getNumerator() == 0);
   }
 
   public String toString(){
@@ -52,7 +52,7 @@ public class RationalNumber extends RealNumber{
   private static int gcd(int a, int b){
     a = Math.abs(a);
     b = Math.abs(b);
-    
+
     if (a < b){
       int holder = b;
       b = a;
