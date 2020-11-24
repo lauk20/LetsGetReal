@@ -141,5 +141,11 @@ public class Tester{
     RationalNumber m = new RationalNumber(6, 10);
     System.out.println(k.equals(m));
     System.out.println(m.equals(k));
+
+    System.out.println("\ntoString RationalNumber Update");
+    RationalNumber new1 = new RationalNumber(0, 12);
+    RationalNumber new2 = new RationalNumber(20, 1);
+    System.out.println(new1);
+    System.out.println(new2);
   }
 }
