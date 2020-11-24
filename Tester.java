@@ -147,5 +147,11 @@ public class Tester{
     RationalNumber new2 = new RationalNumber(20, 1);
     System.out.println(new1);
     System.out.println(new2);
+
+    System.out.println("\n compareTo test");
+    RationalNumber new3 = new RationalNumber(0, 1515);
+    System.out.println(new1.compareTo(new2)); //-1
+    System.out.println(new2.compareTo(new1)); //1
+    System.out.println(new1.compareTo(new3)); //0
   }
 }
