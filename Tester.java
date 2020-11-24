@@ -135,5 +135,11 @@ public class Tester{
     System.out.println(R6.subtract(R7)); //25/156
     System.out.println(R4.subtract(R3)); //-2
     System.out.println(R5.subtract(R7)); //1589/39
+
+    System.out.println("\ninherit arguments");
+    RealNumber k = new RealNumber(0.6);
+    RationalNumber m = new RationalNumber(6, 10);
+    System.out.println(k.equals(m));
+    System.out.println(m.equals(k));
   }
 }

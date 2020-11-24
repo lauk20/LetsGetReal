@@ -1,4 +1,4 @@
-public class RealNumber{
+public class RealNumber extends Number{
   private double value;
 
   public RealNumber(double v){
@@ -11,25 +11,6 @@ public class RealNumber{
 
   public String toString(){
     return "" + getValue();
-  }
-
-  public boolean equals(RealNumber other){
-    if (getValue() == 0){
-      if (other.getValue() == 0){
-        return true;
-      }
-      else{
-        return false;
-      }
-    }
-
-    double error = (Math.abs(getValue() - other.getValue())/other.getValue()) * 100;
-
-    if (Math.abs(error) <= 0.001){
-      return true;
-    }
-
-    return false;
   }
 
   public RealNumber add(RealNumber other){
